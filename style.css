@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    justify-content: center;
+    gap: 1px;
+    margin: 20px auto;
+    background-color: #b1dacc;
+    border: none; /* Removendo a borda do campo de jogo */
+    box-shadow: none; /* Removendo qualquer sombra */
+    position: relative;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+    border: none; /* Removendo bordas da célula */
+}
+
+.snake {
+    background-color: green;
+}
+
+.apple {
+    background-color: red;
+}
+
+#score {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#controls {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.arrow {
+    font-size: 24px;
+}
+
+#message {
+    font-size: 18px;
+    color: #f00;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#game-over-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    display: none; /* Inicialmente invisível */
+}
+
+#controls {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#controls ul {
+    list-style: none;
+    padding: 0;
+}
+
+#controls li {
+    margin: 10px 0;
+}
